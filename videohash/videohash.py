@@ -2,16 +2,16 @@ import os
 import random
 import re
 import shutil
-from pathlib import Path
 from math import ceil
+from pathlib import Path
 from typing import List, Optional, Union
 
 import imagehash
 import numpy as np
-from imagedominantcolor import DominantColor
 from PIL import Image
 
 from .collagemaker import MakeCollage
+from .dominantcolor import DominantColor
 from .downloader import Download
 from .exceptions import DidNotSupplyPathOrUrl, StoragePathDoesNotExist
 from .framesextractor import FramesExtractor
